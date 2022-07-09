@@ -94,4 +94,14 @@ const editBook = (book) => {
   return booksData;
 };
 
-export { retrieveAllBooks, deleteBook, addBook, editBook };
+const fetchBooksFromGoogle = (search) => {
+  //GET "http://localhost:8080/api/v1/books/list/{search}"
+  const url = "http://localhost:8080/api/v1/books/list/" + search;
+  const booksData = fetch(url);
+  console.log(booksData);
+  return booksData;
+};
+
+//
+
+export { retrieveAllBooks, deleteBook, addBook, editBook, fetchBooksFromGoogle };

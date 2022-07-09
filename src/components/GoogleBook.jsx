@@ -13,7 +13,7 @@ import AddGoogleBook from './AddGoogleBook';
 export default function GoogleBook(props) {
 
   var book = props.details
-
+  console.log(book)
   return (
     <Card className="cardWhole">
       <CardHeader 
@@ -23,15 +23,15 @@ export default function GoogleBook(props) {
           </Avatar>
         }
         title= {book.volumeInfo.title}
-        subheader= {book.volumeInfo.authors[0]+","+book.volumeInfo.authors[1]}
+        subheader= {book.volumeInfo.authors}
       />
-      <CardMedia
+       <CardMedia
         component="img"
         sx={{ width: 151 }}
         height="194"
         image= {book.volumeInfo.imageLinks.smallThumbnail}
         alt="Paella dish"
-      />
+      /> 
       <CardContent>
         {/* <Typography variant="body2" color="text.secondary" align='justify' style={{height : 70}}>
         {book.volumeInfo.description}
@@ -43,7 +43,7 @@ export default function GoogleBook(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-      <AddGoogleBook/>
+      <AddGoogleBook />
       </CardActions>
     </Card>
   );
