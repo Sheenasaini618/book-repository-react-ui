@@ -9,10 +9,11 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
+import { deleteBook } from '../util/api/bookApi';
 
-export default function DeleteBook() {
+export default function DeleteBook(props) {
   const [open, setOpen] = React.useState(false);
-  const theme = useTheme();
+  const bookId = props.details
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -21,6 +22,15 @@ export default function DeleteBook() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleDelete = () => {
+    deleteBook(bookId).then(res => {
+      console.log(res)
+      handleClose();
+      window.history.go("http://localhost:8080")
+    })
+  };
+
 
   return (
     <div>
@@ -39,7 +49,7 @@ export default function DeleteBook() {
           <Button onClick={handleClose}>
             No
           </Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button onClick={handleDelete} autoFocus>
             Yes
           </Button>
         </DialogActions>

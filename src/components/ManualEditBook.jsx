@@ -7,10 +7,12 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import EditIcon from '@mui/icons-material/Edit';
 import IconButton from '@mui/material/IconButton';
+import { editBook } from '../util/api/bookApi';
 
 export default function ManualEditBook(props) {
   const [open, setOpen] = React.useState(false);
   const [formData, setFormData] = React.useState({
+    id: props.details.id,
     title: props.details.title,
     thumbnail: props.details.imageLinks.thumbnail,
     authors: props.details.authors[0],
@@ -25,6 +27,14 @@ export default function ManualEditBook(props) {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleAddBook = () => {
+    editBook(formData).then((res) => {
+      console.log(res);
+      handleClose();
+      window.history.go("http://localhost:3000");
+    });
   };
 
   const handleChange = (e) => {
@@ -108,7 +118,7 @@ export default function ManualEditBook(props) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Edit Book</Button>
+          <Button onClick={handleAddBook}>Edit Book</Button>
         </DialogActions>
       </Dialog>
     </div>

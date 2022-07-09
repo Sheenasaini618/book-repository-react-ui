@@ -46,7 +46,7 @@ export default function Book(props) {
       </CardContent>
       <CardActions disableSpacing>
         <ManualEditBook details={book}/>
-        <DeleteBook />
+        <DeleteBook details={book.id}/>
       </CardActions>
     </Card>
   );
