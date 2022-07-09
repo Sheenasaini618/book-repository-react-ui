@@ -14,7 +14,7 @@ function App() {
       {/* A <Routes> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Routes>
-        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home/>}/>
         <Route exact path="/addbook" element={<AddBook/>} />
       </Routes>
     </div>

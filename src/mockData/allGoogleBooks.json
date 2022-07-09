@@ -1,0 +1,164 @@
+[
+  {
+    "volumeInfo": {
+      "id": 1,
+      "title": "Introduction to Probability",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=2HxYV9lWlEcC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=2HxYV9lWlEcC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "authors": [
+        "John E. Freund"
+      ],
+      "description": "Featured topics include permutations and factorials, probabilities and odds, frequency interpretation, mathematical expectation, decision making, postulates of probability, rule of elimination, much more. Exercises with some solutions. Summary. 1973 edition.",
+      "price": 12566,
+      "quantity": 3
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": 2,
+      "title": "Elementary Probability for Applications",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=pk_ViK1rg34C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=pk_ViK1rg34C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "Rick Durrett"
+      ],
+      "description": "Explains probability using genetics, sports, finance, current events and more.",
+      "price": 3421,
+      "quantity": 4
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": 3,
+      "title": "Probability",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=4rdYBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=4rdYBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "John J. Kinney"
+      ],
+      "description": "Thoroughly updated, Probability: An Introduction with Statistical Applications, Second Edition features a comprehensive exploration of statistical data analysis as an application of probability. The new edition provides an introduction to statistics with accessible coverage of reliability, acceptance sampling, confidence intervals, hypothesis testing, and simple linear regression. Encouraging readers to develop a deeper intuitive understanding of probability, the author presents illustrative geometrical presentations and arguments without the need for rigorous mathematical proofs. Featuring a practical and real-world approach, this textbook is ideal for a first course in probability for students majoring in statistics, engineering, business, psychology, operations research, and mathematics. Probability: An Introduction with Statistical Applications, Second Edition is also an excellent reference for researchers and professionals in any discipline who need to make decisions based on data as well as readers interested in learning how to accomplish effective decision making from data.",
+      "price": 56523,
+      "quantity": 2
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "Introduction to Probability, Statistics, and Random Processes",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=3yq_oQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=3yq_oQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "authors": [
+        "Hossein Pishro-Nik"
+      ],
+      "description": "The book covers basic concepts such as random experiments, probability axioms, conditional probability, and counting methods, single and multiple random variables (discrete, continuous, and mixed), as well as moment-generating functions, characteristic functions, random vectors, and inequalities; limit theorems and convergence; introduction to Bayesian and classical statistics; random processes including processing of random signals, Poisson processes, discrete-time and continuous-time Markov chains, and Brownian motion; simulation using MATLAB and R.",
+      "price": 2123,
+      "quantity": 32
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "Introduction to Probability",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=7ip55ODL72wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=7ip55ODL72wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "Charles Miller Grinstead",
+        "James Laurie Snell"
+      ],
+      "description": "This text is designed for an introductory probability course at the university level for sophomores, juniors, and seniors in mathematics, physical and social sciences, engineering, and computer science. It presents a thorough treatment of ideas and techniques necessary for a firm understanding of the subject. The text is also recommended for use in discrete probability courses. The material is organized so that the discrete and continuous probability discussions are presented in a separate, but parallel, manner. This organization does not emphasize an overly rigorous or formal view of probability and therefore offers some strong pedagogical value. Hence, the discrete discussions can sometimes serve to motivate the more abstract continuous probability discussions. Features: Key ideas are developed in a somewhat leisurely style, providing a variety of interesting applications to probability and showing some nonintuitive ideas. Over 600 exercises provide the opportunity for practicing skills and developing a sound understanding of ideas. Numerous historical comments deal with the development of discrete probability. The text includes many computer programs that illustrate the algorithms or the methods of computation for important problems. The book is a beautiful introduction to probability theory at the beginning level. The book contains a lot of examples and an easy development of theory without any sacrifice of rigor, keeping the abstraction to a minimal level. It is indeed a valuable addition to the study of probability theory. --Zentralblatt MATH",
+      "price": 54632,
+      "quantity": 3
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "Basic Probability Theory",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=dr9IAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=dr9IAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "Robert B. Ash"
+      ],
+      "description": "This introduction to more advanced courses in probability and real analysis emphasizes the probabilistic way of thinking, rather than measure-theoretic concepts. Geared toward advanced undergraduates and graduate students, its sole prerequisite is calculus. Taking statistics as its major field of application, the text opens with a review of basic concepts, advancing to surveys of random variables, the properties of expectation, conditional probability and expectation, and characteristic functions. Subsequent topics include infinite sequences of random variables, Markov chains, and an introduction to statistics. Complete solutions to some of the problems appear at the end of the book.",
+      "price": 324,
+      "quantity": 5
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "Probability",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=PCLSBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=PCLSBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "Geoffrey Grimmett",
+        "Dominic Welsh"
+      ],
+      "description": "Probability is an area of mathematics of tremendous contemporary importance across all aspects of human endeavour. This book is a compact account of the basic features of probability and random processes at the level of first and second year mathematics undergraduates and Masters' students in cognate fields. It is suitable for a first course in probability, plus a follow-up course in random processes including Markov chains. A special feature is the authors' attention to rigorous mathematics: not everything is rigorous, but the need for rigour is explained at difficult junctures. The text is enriched by simple exercises, together with problems (with very brief hints) many of which are taken from final examinations at Cambridge and Oxford. The first eight chapters form a course in basic probability, being an account of events, random variables, and distributions - discrete and continuous random variables are treated separately - together with simple versions of the law of large numbers and the central limit theorem. There is an account of moment generating functions and their applications. The following three chapters are about branching processes, random walks, and continuous-time random processes such as the Poisson process. The final chapter is a fairly extensive account of Markov chains in discrete time. This second edition develops the success of the first edition through an updated presentation, the extensive new chapter on Markov chains, and a number of new sections to ensure comprehensive coverage of the syllabi at major universities.",
+      "price": 46233,
+      "quantity": 4
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "An Introduction to Probability Theory",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=EM4ToEZlycwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=EM4ToEZlycwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "K. Itô",
+        "Kiyosi·It錹"
+      ],
+      "description": "One of the most distinguished probability theorists in the world rigorously explains the basic probabilistic concepts while fostering an intuitive understanding of random phenomena.",
+      "price": 343,
+      "quantity": 4
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "Measure Theory and Probability Theory",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=9tv0taI8l6YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=9tv0taI8l6YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": [
+        "Krishna B. Athreya",
+        "Soumendra N. Lahiri"
+      ],
+      "description": "This is a graduate level textbook on measure theory and probability theory. The book can be used as a text for a two semester sequence of courses in measure theory and probability theory, with an option to include supplemental material on stochastic processes and special topics. It is intended primarily for first year Ph.D. students in mathematics and statistics although mathematically advanced students from engineering and economics would also find the book useful. Prerequisites are kept to the minimal level of an understanding of basic real analysis concepts such as limits, continuity, differentiability, Riemann integration, and convergence of sequences and series. A review of this material is included in the appendix. The book starts with an informal introduction that provides some heuristics into the abstract concepts of measure and integration theory, which are then rigorously developed. The first part of the book can be used for a standard real analysis course for both mathematics and statistics Ph.D. students as it provides full coverage of topics such as the construction of Lebesgue-Stieltjes measures on real line and Euclidean spaces, the basic convergence theorems, L^p spaces, signed measures, Radon-Nikodym theorem, Lebesgue's decomposition theorem and the fundamental theorem of Lebesgue integration on R, product spaces and product measures, and Fubini-Tonelli theorems. It also provides an elementary introduction to Banach and Hilbert spaces, convolutions, Fourier series and Fourier and Plancherel transforms. Thus part I would be particularly useful for students in a typical Statistics Ph.D. program if a separate course on real analysis is not a standard requirement. Part II (chapters 6-13) provides full coverage of standard graduate level probability theory. It starts with Kolmogorov's probability model and Kolmogorov's existence theorem. It then treats thoroughly the laws of large numbers including renewal theory and ergodic theorems with applications and then weak convergence of probability distributions, characteristic functions, the Levy-Cramer continuity theorem and the central limit theorem as well as stable laws. It ends with conditional expectations and conditional probability, and an introduction to the theory of discrete time martingales. Part III (chapters 14-18) provides a modest coverage of discrete time Markov chains with countable and general state spaces, MCMC, continuous time discrete space jump Markov processes, Brownian motion, mixing sequences, bootstrap methods, and branching processes. It could be used for a topics/seminar course or as an introduction to stochastic processes. Krishna B. Athreya is a professor at the departments of mathematics and statistics and a Distinguished Professor in the College of Liberal Arts and Sciences at the Iowa State University. He has been a faculty member at University of Wisconsin, Madison; Indian Institute of Science, Bangalore; Cornell University; and has held visiting appointments in Scandinavia and Australia. He is a fellow of the Institute of Mathematical Statistics USA; a fellow of the Indian Academy of Sciences, Bangalore; an elected member of the International Statistical Institute; and serves on the editorial board of several journals in probability and statistics. Soumendra N. Lahiri is a professor at the department of statistics at the Iowa State University. He is a fellow of the Institute of Mathematical Statistics, a fellow of the American Statistical Association, and an elected member of the International Statistical Institute.",
+      "price": 3243,
+      "quantity": 34
+    }
+  },
+  {
+    "volumeInfo": {
+      "id": null,
+      "title": "Kirshna's Text Book: Probability Theory",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=boSIS59vlzIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=boSIS59vlzIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "authors": ["Robert"],
+      "description": "This is probability book",
+      "price": 1234,
+      "quantity": 4
+    }
+  }
+]
