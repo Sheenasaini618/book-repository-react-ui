@@ -29,9 +29,9 @@ export default function ManualEditBook(props) {
     setOpen(false);
   };
 
-  const handleAddBook = () => {
+  const handleEditBook = () => {
     editBook(formData).then((res) => {
-      console.log(res);
+      console.log(res.json);
       handleClose();
       window.history.go("http://localhost:3000");
     });
@@ -51,7 +51,7 @@ export default function ManualEditBook(props) {
         <EditIcon />
       </IconButton>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle> Edit Book</DialogTitle>
+        <DialogTitle>Edit Book</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus
@@ -118,7 +118,7 @@ export default function ManualEditBook(props) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleAddBook}>Edit Book</Button>
+          <Button onClick={handleEditBook}>Edit Book</Button>
         </DialogActions>
       </Dialog>
     </div>

@@ -13,6 +13,7 @@ import AddGoogleBook from './AddGoogleBook';
 export default function GoogleBook(props) {
 
   var book = props.details
+  
   console.log(book)
   return (
     <Card className="cardWhole">
@@ -43,7 +44,7 @@ export default function GoogleBook(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-      <AddGoogleBook />
+      <AddGoogleBook details={book} />
       </CardActions>
     </Card>
   );

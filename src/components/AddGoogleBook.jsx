@@ -8,8 +8,12 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
+import { addGoogleBook } from '../util/api/bookApi';
 
-export default function AddGoogleBook() {
+export default function AddGoogleBook(props) {
+
+  var bookData = props.details
+
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
@@ -20,6 +24,14 @@ export default function AddGoogleBook() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleGoogleBookAdd = () => {
+    addGoogleBook(bookData).then((res) => {
+      console.log(res);
+      handleClose();
+      window.history.go("http://localhost:3000/add");
+    });
   };
 
   return (
@@ -40,7 +52,7 @@ export default function AddGoogleBook() {
           <Button onClick={handleClose}>
             No
           </Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button onClick={handleGoogleBookAdd} autoFocus>
             Yes
           </Button>
         </DialogActions>

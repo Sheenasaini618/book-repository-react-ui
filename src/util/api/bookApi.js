@@ -25,6 +25,14 @@ const retrieveAllBooks = () => {
   return booksData;
 };
 
+const retrieveBooksBasisTitle = (title) => {
+  //GET "http://localhost:8080/api/v1/books/search/title/" + title
+  const url = "http://localhost:8080/api/v1/books/search/title/" + title;
+  const booksData = fetch(url);
+  console.log(booksData);
+  return booksData;
+};
+
 const deleteBook = (id) => {
   //DELETE "http://localhost:8080/api/v1/books/delete/{id}"
   const url = "http://localhost:8080/api/v1/books/delete/" + id;
@@ -64,6 +72,35 @@ const addBook = (book) => {
   return booksData;
 };
 
+const addGoogleBook = (book) => {
+  //POST http://localhost:8080/api/v1/books/create
+
+  const googleBookBody = {
+    title: book.volumeInfo.title,
+    imageLinks: {
+      smallThumbnail: book.volumeInfo.imageLinks.smallThumbnail,
+      thumbnail: book.volumeInfo.imageLinks.thumbnail,
+    },
+    authors: [book.volumeInfo.authors[0]],
+    description: book.volumeInfo.description,
+    price: book.volumeInfo.price,
+    quantity: book.volumeInfo.quantity,
+  };
+
+  console.log(googleBookBody);
+
+  const url = "http://localhost:8080/api/v1/books/create";
+  const bookData = fetch(url, {
+    method: "POST",
+    body: JSON.stringify(googleBookBody),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  console.log(googleBookBody);
+  return bookData;
+};
+
 const editBook = (book) => {
   //POST http://localhost:8080/api/v1/books/create
 
@@ -82,9 +119,9 @@ const editBook = (book) => {
 
   console.log(bookBody);
 
-  const url = "http://localhost:8080/api/v1/books/create";
+  const url = "http://localhost:8080/api/v1/books/update/" + book.id;
   const booksData = fetch(url, {
-    method: "POST",
+    method: "PUT",
     body: JSON.stringify(bookBody),
     headers: {
       "Content-Type": "application/json",
@@ -104,4 +141,4 @@ const fetchBooksFromGoogle = (search) => {
 
 //
 
-export { retrieveAllBooks, deleteBook, addBook, editBook, fetchBooksFromGoogle };
+export { retrieveAllBooks, deleteBook, addBook, editBook, fetchBooksFromGoogle, addGoogleBook, retrieveBooksBasisTitle };
