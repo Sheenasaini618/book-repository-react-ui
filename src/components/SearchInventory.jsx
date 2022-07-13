@@ -17,18 +17,6 @@ export default function SearchInventory() {
 
     //componentDidMount and componentDidUpdate
 
-    React.useEffect(() => {
-        //Promise<Response>
-        //Response
-        retrieveBooksBasisTitle(searchBookInventory)
-        .then((res) => {
-            return res.json();
-        })
-        .then((result) => {
-            setData(result);
-        });
-      },[]);
-
     const handleChange = (e) => {
         setsearchBookInventory(
             e.target.value);
@@ -42,6 +30,18 @@ export default function SearchInventory() {
     else {
         bookCatalogueComponent = <BookCatalogueBasisTitle details={data} />
     }
+
+    React.useEffect(() => {
+        //Promise<Response>
+        //Response
+        retrieveBooksBasisTitle(searchBookInventory)
+        .then((res) => {
+            return res.json();
+        })
+        .then((result) => {
+            setData(result);
+        });
+      },[]);
 
     return (
         <>
