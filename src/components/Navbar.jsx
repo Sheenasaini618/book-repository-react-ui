@@ -83,20 +83,6 @@ export default function Navbar() {
               Add Book using Google APIs
             </Button>
           </Link>
-          {/* <a href="/addbook">
-            <Button variant="contained" color="info">
-              Add Book
-            </Button>
-          </a> */}
-          {/* <Search style={{width: "535px"}}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Inventory Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search> */}
         </Toolbar>
       </AppBar>
     </Box>

@@ -39,89 +39,89 @@ export default function ManualEditBook(props) {
 
   const handleChange = (e) => {
     setFormData({
-        ...formData,
-        [e.target.id] : e.target.value
+      ...formData,
+      [e.target.id]: e.target.value
     })
   };
 
   return (
-   <center>
-     <div style={{margin : "10px"}}>
-      <IconButton onClick={handleClickOpen}>
-        <EditIcon />
-      </IconButton>
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Edit Book</DialogTitle>
-        <DialogContent>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="title"
-            label="Title"
-            fullWidth
-            variant="standard"
-            value={formData.title}
-            onChange={handleChange}
-          />
-           <TextField
-            autoFocus
-            margin="dense"
-            id="thumbnail"
-            label="Thumbnail Link"
-            fullWidth
-            variant="standard"
-            value={formData.thumbnail}
-            onChange={handleChange}
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="authors"
-            label="Authors"
-            fullWidth
-            variant="standard"
-            value={formData.authors}
-            onChange={handleChange}
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="price"
-            label="Price"
-            type="number"
-            fullWidth
-            variant="standard"
-            value={formData.price}
-            onChange={handleChange}
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="quantity"
-            label="Quantity"
-            fullWidth
-            type="number"
-            variant="standard"
-            value={formData.quantity}
-            onChange={handleChange}
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="description"
-            label="Description"
-            fullWidth
-            variant="standard"
-            value={formData.description}
-            onChange={handleChange}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleEditBook}>Edit Book</Button>
-        </DialogActions>
-      </Dialog>
-    </div>
-   </center>
+    <center>
+      <div style={{ margin: "10px" }}>
+        <IconButton onClick={handleClickOpen}>
+          <EditIcon />
+        </IconButton>
+        <Dialog open={open} onClose={handleClose}>
+          <DialogTitle>Edit Book</DialogTitle>
+          <DialogContent>
+            <TextField
+              autoFocus
+              margin="dense"
+              id="title"
+              label="Title"
+              fullWidth
+              variant="standard"
+              value={formData.title}
+              onChange={handleChange}
+            />
+            <TextField
+              autoFocus
+              margin="dense"
+              id="thumbnail"
+              label="Thumbnail Link"
+              fullWidth
+              variant="standard"
+              value={formData.thumbnail}
+              onChange={handleChange}
+            />
+            <TextField
+              autoFocus
+              margin="dense"
+              id="authors"
+              label="Authors"
+              fullWidth
+              variant="standard"
+              value={formData.authors}
+              onChange={handleChange}
+            />
+            <TextField
+              autoFocus
+              margin="dense"
+              id="price"
+              label="Price"
+              type="number"
+              fullWidth
+              variant="standard"
+              value={formData.price}
+              onChange={handleChange}
+            />
+            <TextField
+              autoFocus
+              margin="dense"
+              id="quantity"
+              label="Quantity"
+              fullWidth
+              type="number"
+              variant="standard"
+              value={formData.quantity}
+              onChange={handleChange}
+            />
+            <TextField
+              autoFocus
+              margin="dense"
+              id="description"
+              label="Description"
+              fullWidth
+              variant="standard"
+              value={formData.description}
+              onChange={handleChange}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose}>Cancel</Button>
+            <Button onClick={handleEditBook}>Edit Book</Button>
+          </DialogActions>
+        </Dialog>
+      </div>
+    </center>
   );
 }

@@ -1,25 +1,13 @@
-import Book from "../components/Book";
+import Book from "./Book";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { retrieveAllBooks } from "../util/api/bookApi";
 // import data from '../mockData/allBooks.json';
 
-export default function BookCatalogue() {
-  const [data, setData] = React.useState([]);
+export default function BookCatalogue(props) {
 
-  //componentDidMount and componentDidUpdate
-  React.useEffect(() => {
-    //Promise<Response>
-    //Response
-    retrieveAllBooks()
-      .then((res) => {
-        return res.json();
-      })
-      .then((result) => {
-        setData(result);
-      });
-  },[]);
+  var data = props.details
 
   return (
     <Box sx={{ flexGrow: 2 }} style={{ margin: "25px" }}>

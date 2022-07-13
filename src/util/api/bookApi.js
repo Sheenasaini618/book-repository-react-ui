@@ -26,8 +26,9 @@ const retrieveAllBooks = () => {
 };
 
 const retrieveBooksBasisTitle = (title) => {
-  //GET "http://localhost:8080/api/v1/books/search/title/" + title
-  const url = "http://localhost:8080/api/v1/books/search/title/" + title;
+  //GET "http://localhost:8080/api/v1/books/list"
+  console.log(title)
+  const url = "http://localhost:8080/api/v1/books/list?query=" + title;
   const booksData = fetch(url);
   console.log(booksData);
   return booksData;
