@@ -88,7 +88,7 @@ export default function Navbar() {
               Add Book
             </Button>
           </a> */}
-          <Search style={{width: "535px"}}>
+          {/* <Search style={{width: "535px"}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -96,7 +96,7 @@ export default function Navbar() {
               placeholder="Inventory Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
         </Toolbar>
       </AppBar>
     </Box>

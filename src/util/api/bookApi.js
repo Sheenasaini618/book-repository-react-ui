@@ -27,7 +27,7 @@ const retrieveAllBooks = () => {
 
 const retrieveBooksBasisTitle = (title) => {
   //GET "http://localhost:8080/api/v1/books/search/title/" + title
-  const url = "http://localhost:8080/api/v1/books/search/title/" + title;
+  const url = "http://localhost:8080/api/v1/books/search/title/probability";
   const booksData = fetch(url);
   console.log(booksData);
   return booksData;
@@ -101,6 +101,8 @@ const addGoogleBook = (book) => {
   return bookData;
 };
 
+//retrieveBookListOnBasisTitle
+
 const editBook = (book) => {
   //POST http://localhost:8080/api/v1/books/create
 
@@ -132,8 +134,8 @@ const editBook = (book) => {
 };
 
 const fetchBooksFromGoogle = (search) => {
-  //GET "http://localhost:8080/api/v1/books/list/{search}"
-  const url = "http://localhost:8080/api/v1/books/list/" + search;
+  //GET "http://localhost:8080/api/v1/books/google/list/{search}"
+  const url = "http://localhost:8080/api/v1/books/google/list/" + search;
   const booksData = fetch(url);
   console.log(booksData);
   return booksData;
