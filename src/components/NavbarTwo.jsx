@@ -80,16 +80,6 @@ export default function NavbarTwo(props) {
             Book Inventory
           </Typography>
           <ManualAddBook />
-          {/* <Link to="/addbook">
-            <Button variant="contained" color="info">
-              Add Book using Google APIs
-            </Button>
-          </Link> */}
-          {/* <a href="/addbook">
-            <Button variant="contained" color="info">
-              Add Book
-            </Button>
-          </a> */}
           <form
             onSubmit={(e) => {
               e.preventDefault();

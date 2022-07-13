@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import EditIcon from '@mui/icons-material/Edit';
 import IconButton from '@mui/material/IconButton';
 import { editBook } from '../util/api/bookApi';
+import { CardMedia } from '@mui/material';
 
 export default function ManualEditBook(props) {
   const [open, setOpen] = React.useState(false);
@@ -53,6 +54,13 @@ export default function ManualEditBook(props) {
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>Edit Book</DialogTitle>
           <DialogContent>
+          <CardMedia
+              component="img"
+              sx={{ width: 151 }}
+              height="194"
+              image={props.details.imageLinks.thumbnail}
+              alt="Paella dish"
+            />
             <TextField
               autoFocus
               margin="dense"
@@ -61,7 +69,7 @@ export default function ManualEditBook(props) {
               fullWidth
               variant="standard"
               value={formData.title}
-              onChange={handleChange}
+              // onChange={handleChange}
             />
             <TextField
               autoFocus
@@ -113,12 +121,12 @@ export default function ManualEditBook(props) {
               fullWidth
               variant="standard"
               value={formData.description}
-              onChange={handleChange}
+              // onChange={handleChange}
             />
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose}>Cancel</Button>
-            <Button onClick={handleEditBook}>Edit Book</Button>
+            <Button onClick={handleEditBook}>Save changes</Button>
           </DialogActions>
         </Dialog>
       </div>

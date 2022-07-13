@@ -3,9 +3,7 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import Divider from '@mui/material/Divider';
 import { retrieveBooksBasisTitle } from '../util/api/bookApi';
-import Book from './Book';
-import BookCatalogueBasisTitle from './BookCatalogue';
-import BookCatalogue from './BookCatalogue_unused';
+import BookCatalogue from './BookCatalogue';
 
 export default function SearchInventory() {
 
@@ -27,7 +25,6 @@ export default function SearchInventory() {
         retrieveBooksBasisTitle(searchBookInventory)
             .then((res) => {
                 return res.json();
-
             })
             .then((result) => {
                 setData(result);
@@ -39,7 +36,7 @@ export default function SearchInventory() {
             <Paper
                 component="form"
                 sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}>
-                <InputBase
+                <InputBase 
                     sx={{ ml: 1, flex: 1 }}
                     placeholder="Search Inventory book by title or author"
                     onChange={handleChange}

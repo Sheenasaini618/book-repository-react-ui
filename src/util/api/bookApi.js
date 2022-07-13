@@ -17,18 +17,24 @@
 
 // ------------------------------------------------------------------------------------------
 
-const retrieveAllBooks = () => {
-  //GET "http://localhost:8080/api/v1/books/list"
-  const url = "http://localhost:8080/api/v1/books/list";
-  const booksData = fetch(url);
-  console.log(booksData);
-  return booksData;
-};
+// const retrieveAllBooks = () => {
+//   //GET "http://localhost:8080/api/v1/books/list"
+//   const url = "http://localhost:8080/api/v1/books/list";
+//   const booksData = fetch(url);
+//   console.log(booksData);
+//   return booksData;
+// };
 
 const retrieveBooksBasisTitle = (title) => {
   //GET "http://localhost:8080/api/v1/books/list"
   console.log(title)
-  const url = "http://localhost:8080/api/v1/books/list?query=" + title;
+  let url;
+  if(title === ""){
+   url = "http://localhost:8080/api/v1/books/list"
+  }
+  else {
+   url = "http://localhost:8080/api/v1/books/list/" + title;
+  }
   const booksData = fetch(url);
   console.log(booksData);
   return booksData;
@@ -144,4 +150,4 @@ const fetchBooksFromGoogle = (search) => {
 
 //
 
-export { retrieveAllBooks, deleteBook, addBook, editBook, fetchBooksFromGoogle, addGoogleBook, retrieveBooksBasisTitle };
+export { deleteBook, addBook, editBook, fetchBooksFromGoogle, addGoogleBook, retrieveBooksBasisTitle };
