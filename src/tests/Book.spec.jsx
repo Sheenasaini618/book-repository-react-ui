@@ -12,8 +12,8 @@ describe('<Book />', () => {
     let props;
 
 beforeEach(() => {
-    charAt: jest.fn()
-    toUpperCase: jest.fn()
+    // charAt: jest.fn()
+    // toUpperCase: jest.fn()
     props = {
       details: [
         {
