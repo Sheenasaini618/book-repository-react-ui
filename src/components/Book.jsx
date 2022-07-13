@@ -34,9 +34,6 @@ export default function Book(props) {
         alt="Paella dish"
       />
       <CardContent>
-        {/* <Typography variant="body2" color="text.secondary" align='justify' style={{height : 70}}>
-        {book.description}
-        </Typography> */}
         <Typography variant="h6" color="text.secondary" align='justify' style={{fontWeight : 600}}>
         Price: ₹{book.price}.00
         </Typography>

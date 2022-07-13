@@ -4,11 +4,8 @@ import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import { Grid } from "@mui/material";
 import { addBook } from "../util/api/bookApi";
-import {CardMedia} from "@mui/material";
 
 export default function ManualAddBook() {
   const [open, setOpen] = React.useState(false);
@@ -53,10 +50,6 @@ export default function ManualAddBook() {
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle> Add Book using Form</DialogTitle>
           <DialogContent>
-            <CardMedia
-              image={formData.thumbnail}
-              alt="Paella dish"
-            />
             <TextField
               autoFocus
               margin="dense"
