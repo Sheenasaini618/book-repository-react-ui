@@ -8,19 +8,17 @@ import DeleteBook from '../components/DeleteBook';
 
 
 configure({ adapter: new Adapter() });
-describe('<Book />', () => {
+describe('<DeleteBook />', () => {
 
-    let props, component, wrapper;
+    let props, wrapper;
 
     beforeEach(() => {
-        // charAt: jest.fn()
-        // toUpperCase: jest.fn()
         props = {
             details: 1
         };
     })
-  
-  it('should call keyPress onChange of fullName with error message', () => {
+
+    it('should check for icon element', () => {
 
         wrapper = shallow(<DeleteBook {...props} />);
         const event = {};
@@ -30,4 +28,22 @@ describe('<Book />', () => {
             .at(0)
             .simulate('click', event);
     })
+})
+
+describe('<DeleteBook />', () => {
+
+    let props, component;
+  
+    beforeEach(() => {
+      props = {
+        details: []
+      };
+  
+      component = shallow(<DeleteBook {...props} />);
+    });
+  
+    it('should render book ', () => {
+      const element = component.debug()
+      expect(element).toMatchSnapshot();
+    });
 })

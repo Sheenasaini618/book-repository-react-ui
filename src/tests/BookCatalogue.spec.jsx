@@ -11,8 +11,6 @@ describe('<BookCatalogue />', () => {
   let props, component;
 
   beforeEach(() => {
-    // charAt: jest.fn()
-    // toUpperCase: jest.fn()
     props = {
       details: [
         {
@@ -28,7 +26,6 @@ describe('<BookCatalogue />', () => {
           'quantity': 8
         } ]
     };
-
     component = shallow(<BookCatalogue {...props} />);
   });
 
@@ -43,8 +40,6 @@ describe('<BookCatalogue />', () => {
     let props, component;
   
     beforeEach(() => {
-      // charAt: jest.fn()
-      // toUpperCase: jest.fn()
       props = {
         details: []
       };

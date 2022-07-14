@@ -37,14 +37,7 @@ describe('<GoogleBook />', () => {
 
         component = shallow(<GoogleBook {...props} />);
     })
-
-    // it('should call keyPress onChange of fullName with error message', () => {
-
-    //     wrapper = shallow(<GoogleBook {...props} />);
-    //     const event = {};
-    //     expect(wrapper.find('.cardWhole').length).toBe(1);
-    // })
-
+    
     it('should render book ', () => {
         const element = component.debug()
         expect(element).toMatchSnapshot();

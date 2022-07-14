@@ -21,3 +21,24 @@ exports[`<Book /> should render book  1`] = `
   </ForwardRef(CardActions)>
 </ForwardRef(Card)>"
 `;
+
+exports[`<DeleteBook /> should render book  1`] = `
+"<div>
+  <ForwardRef(IconButton) className=\\"icon\\" onClick={[Function: handleClickOpen]}>
+    <Memo(ForwardRef(DeleteIcon)) />
+  </ForwardRef(IconButton)>
+  <ForwardRef(Dialog) open={false} onClose={[Function: handleClose]} aria-labelledby=\\"responsive-dialog-title\\">
+    <ForwardRef(DialogTitle) id=\\"responsive-dialog-title\\">
+      Are you sure to delete the book?
+    </ForwardRef(DialogTitle)>
+    <ForwardRef(DialogActions)>
+      <ForwardRef(Button) onClick={[Function: handleClose]}>
+        No
+      </ForwardRef(Button)>
+      <ForwardRef(Button) onClick={[Function: handleDelete]} autoFocus={true}>
+        Yes
+      </ForwardRef(Button)>
+    </ForwardRef(DialogActions)>
+  </ForwardRef(Dialog)>
+</div>"
+`;

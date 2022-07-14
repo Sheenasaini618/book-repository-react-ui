@@ -17,7 +17,7 @@ export default function Book(props) {
   console.log(book)
   return (
     <Card sx={{ maxWidth: 450, maxHeight: 500 }} style={{ marginTop: "10px" }}>
-      <CardHeader
+      <CardHeader className='cardHeader'
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
             {book.title.charAt(0).toUpperCase()}
