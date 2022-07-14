@@ -42,4 +42,12 @@ describe('<AddGoogleBook />', () => {
         const element = component.debug()
         expect(element).toMatchSnapshot();
     });
+
+    it('should validate placeholder in search Book Inventory component', () => {
+
+        wrapper = shallow(<AddGoogleBook {...props} />);
+        const event = {};
+        expect(wrapper.find('.dialogTitle').length).toBe(1);
+    })
+
 })

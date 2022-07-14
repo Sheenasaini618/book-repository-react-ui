@@ -19,7 +19,7 @@ describe('<SearchInventory />', () => {
 
     let wrapper;
 
-    it('should call keyPress onChange of fullName with error message', () => {
+    it('should validate placeholder in search Book Inventory component', () => {
 
         wrapper = shallow(<SearchInventory />);
         const event = {};

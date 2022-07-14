@@ -45,7 +45,7 @@ export default function AddGoogleBook(props) {
           onClose={handleClose}
           aria-labelledby="responsive-dialog-title"
         >
-          <DialogTitle id="responsive-dialog-title">
+          <DialogTitle className='dialogTitle' id="responsive-dialog-title">
             {"Are you sure you want to add the book?"}
           </DialogTitle>
           <DialogActions>
