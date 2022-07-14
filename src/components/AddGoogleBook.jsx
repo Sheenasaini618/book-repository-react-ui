@@ -16,7 +16,7 @@ export default function AddGoogleBook(props) {
 
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+  // const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -40,23 +40,23 @@ export default function AddGoogleBook(props) {
         <Fab size="small" color="primary" aria-label="add" onClick={handleClickOpen}>
           <AddIcon />
         </Fab>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="responsive-dialog-title"
-      >
-        <DialogTitle id="responsive-dialog-title">
-          {"Are you sure you want to add the book?"}
-        </DialogTitle>
-        <DialogActions>
-          <Button onClick={handleClose}>
-            No
-          </Button>
-          <Button onClick={handleGoogleBookAdd} autoFocus>
-            Yes
-          </Button>
-        </DialogActions>
-      </Dialog>
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <DialogTitle id="responsive-dialog-title">
+            {"Are you sure you want to add the book?"}
+          </DialogTitle>
+          <DialogActions>
+            <Button onClick={handleClose}>
+              No
+            </Button>
+            <Button onClick={handleGoogleBookAdd} autoFocus>
+              Yes
+            </Button>
+          </DialogActions>
+        </Dialog>
       </Box>
     </div>
   );

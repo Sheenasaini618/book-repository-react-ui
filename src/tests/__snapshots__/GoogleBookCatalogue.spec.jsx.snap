@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookCatalogue /> should render book  1`] = `
+"<ForwardRef(Box) sx={{...}} style={{...}}>
+  <ForwardRef(Grid) container={true} spacing={0} />
+</ForwardRef(Box)>"
+`;

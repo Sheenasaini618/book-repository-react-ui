@@ -27,10 +27,9 @@ export default function DeleteBook(props) {
     })
   };
 
-
   return (
     <div>
-      <IconButton onClick={handleClickOpen}>
+      <IconButton className = "icon" onClick={handleClickOpen}>
           <DeleteIcon />
       </IconButton>
       <Dialog

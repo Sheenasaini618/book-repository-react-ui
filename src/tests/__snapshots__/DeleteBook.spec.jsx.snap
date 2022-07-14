@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Book /> should render book  1`] = `
+"<ForwardRef(Card) sx={{...}} style={{...}}>
+  <ForwardRef(CardHeader) avatar={{...}} title=\\"Probability Basics\\" subheader=\\"Michael Biden\\" />
+  <ForwardRef(CardMedia) component=\\"img\\" sx={{...}} height=\\"194\\" image=\\"http://books.google.com/books/content?id=3yq_oQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api\\" alt=\\"Paella dish\\" />
+  <ForwardRef(CardContent)>
+    <ForwardRef(Typography) variant=\\"h6\\" color=\\"text.secondary\\" align=\\"justify\\" style={{...}}>
+      Price: ₹
+      1000
+      .00
+    </ForwardRef(Typography)>
+    <ForwardRef(Typography) variant=\\"h6\\" color=\\"text.secondary\\" align=\\"justify\\" style={{...}}>
+      Copies Available: 
+      8
+    </ForwardRef(Typography)>
+  </ForwardRef(CardContent)>
+  <ForwardRef(CardActions) disableSpacing={true}>
+    <ManualEditBook details={{...}} />
+    <DeleteBook details=\\"1\\" />
+  </ForwardRef(CardActions)>
+</ForwardRef(Card)>"
+`;

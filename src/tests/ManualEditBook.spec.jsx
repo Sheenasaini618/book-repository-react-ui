@@ -1,13 +1,14 @@
 import React from 'react'
-import Book from '../components/Book'
 import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
 import { mount, shallow, render } from 'enzyme'
 import { configure } from 'enzyme';
-import renderer from 'react-test-renderer'
+import BookCatalogue from '../components/BookCatalogue';
+import GoogleBookCatalogue from '../components/GoogleBookCatalogue';
+import ManualEditBook from '../components/ManualEditBook';
 
 configure({ adapter: new Adapter() });
-describe('<Book />', () => {
+describe('<ManualEditBook />', () => {
 
   let props, component;
 
@@ -30,10 +31,8 @@ describe('<Book />', () => {
         }
     };
 
-    component = shallow(<Book {...props} />);
-  });
-
-
+    component = shallow(<ManualEditBook {...props} />);
+  })
 
   it('should render book ', () => {
     const element = component.debug()

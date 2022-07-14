@@ -1,13 +1,12 @@
 import React from 'react'
-import Book from '../components/Book'
 import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
 import { mount, shallow, render } from 'enzyme'
 import { configure } from 'enzyme';
-import renderer from 'react-test-renderer'
+import BookCatalogue from '../components/BookCatalogue';
 
 configure({ adapter: new Adapter() });
-describe('<Book />', () => {
+describe('<BookCatalogue />', () => {
 
   let props, component;
 
@@ -15,7 +14,7 @@ describe('<Book />', () => {
     // charAt: jest.fn()
     // toUpperCase: jest.fn()
     props = {
-      details: 
+      details: [
         {
           'id': '1',
           'title': 'Probability Basics',
@@ -27,16 +26,34 @@ describe('<Book />', () => {
           'description': 'This book is all about Probability Basics, This book is all about Probability Basics,This book is all about Probability Basics.',
           'price': 1000,
           'quantity': 8
-        }
+        } ]
     };
 
-    component = shallow(<Book {...props} />);
+    component = shallow(<BookCatalogue {...props} />);
   });
-
-
 
   it('should render book ', () => {
     const element = component.debug()
     expect(element).toMatchSnapshot();
   });
+})
+
+describe('<BookCatalogue />', () => {
+
+    let props, component;
+  
+    beforeEach(() => {
+      // charAt: jest.fn()
+      // toUpperCase: jest.fn()
+      props = {
+        details: []
+      };
+  
+      component = shallow(<BookCatalogue {...props} />);
+    });
+  
+    it('should render book ', () => {
+      const element = component.debug()
+      expect(element).toMatchSnapshot();
+    });
 })

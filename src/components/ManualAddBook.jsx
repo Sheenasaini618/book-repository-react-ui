@@ -44,7 +44,7 @@ export default function ManualAddBook() {
   return (
     <center>
       <div style={{ margin: "10px" }}>
-        <Button onClick={handleClickOpen} variant="contained" color="info">
+        <Button className = 'clickButton' onClick={handleClickOpen} variant="contained" color="info">
           Add Book using Form
         </Button>
         <Dialog open={open} onClose={handleClose}>

@@ -36,7 +36,7 @@ export default function SearchInventory() {
             <Paper
                 component="form"
                 sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}>
-                <InputBase 
+                <InputBase className='placeholder'
                     sx={{ ml: 1, flex: 1 }}
                     placeholder="Search Inventory book by title or author"
                     onChange={handleChange}
