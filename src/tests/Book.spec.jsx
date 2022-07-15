@@ -9,6 +9,7 @@ configure({ adapter: new Adapter() });
 describe('<Book />', () => {
 
   let props, component;
+  let wrapper;
 
   beforeEach(() => {
     props = {
@@ -34,5 +35,9 @@ describe('<Book />', () => {
     expect(element).toMatchSnapshot();
   });
 
-  
+  it('should validate placeholder in search Book Inventory component', () => {
+
+    wrapper = shallow(<Book {...props} />);
+    expect(wrapper.find('.cardHeader').length).toBe(1);
+  })
 })

@@ -49,10 +49,10 @@ export default function AddGoogleBook(props) {
             {"Are you sure you want to add the book?"}
           </DialogTitle>
           <DialogActions>
-            <Button onClick={handleClose}>
+            <Button className = 'closeButton' onClick={handleClose}>
               No
             </Button>
-            <Button onClick={handleGoogleBookAdd} autoFocus>
+            <Button className = 'approveButton' onClick={handleGoogleBookAdd} autoFocus>
               Yes
             </Button>
           </DialogActions>

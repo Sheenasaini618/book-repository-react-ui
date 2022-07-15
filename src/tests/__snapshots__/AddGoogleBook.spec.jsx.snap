@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<AddGoogleBook /> should match snapshot 1`] = `[Function]`;
+
 exports[`<AddGoogleBook /> should render book  1`] = `
 "<div>
   <ForwardRef(Box) sx={{...}}>
@@ -7,14 +9,14 @@ exports[`<AddGoogleBook /> should render book  1`] = `
       <Memo(ForwardRef(AddIcon)) />
     </ForwardRef(Fab)>
     <ForwardRef(Dialog) open={false} onClose={[Function: handleClose]} aria-labelledby=\\"responsive-dialog-title\\">
-      <ForwardRef(DialogTitle) id=\\"responsive-dialog-title\\">
+      <ForwardRef(DialogTitle) className=\\"dialogTitle\\" id=\\"responsive-dialog-title\\">
         Are you sure you want to add the book?
       </ForwardRef(DialogTitle)>
       <ForwardRef(DialogActions)>
-        <ForwardRef(Button) onClick={[Function: handleClose]}>
+        <ForwardRef(Button) className=\\"closeButton\\" onClick={[Function: handleClose]}>
           No
         </ForwardRef(Button)>
-        <ForwardRef(Button) onClick={[Function: handleGoogleBookAdd]} autoFocus={true}>
+        <ForwardRef(Button) className=\\"approveButton\\" onClick={[Function: handleGoogleBookAdd]} autoFocus={true}>
           Yes
         </ForwardRef(Button)>
       </ForwardRef(DialogActions)>
