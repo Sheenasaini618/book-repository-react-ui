@@ -33,17 +33,17 @@ describe('<DeleteBook />', () => {
 describe('<DeleteBook />', () => {
 
     let props, component;
-  
+
     beforeEach(() => {
-      props = {
-        details: []
-      };
-  
-      component = shallow(<DeleteBook {...props} />);
+        props = {
+            details: []
+        };
+
+        component = shallow(<DeleteBook {...props} />);
     });
-  
-    it('should render book ', () => {
-      const element = component.debug()
-      expect(element).toMatchSnapshot();
+
+    it('should match snapshot', () => {
+        const element = component.debug()
+        expect(element).toMatchSnapshot();
     });
 })

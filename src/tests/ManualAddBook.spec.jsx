@@ -27,7 +27,7 @@ describe('<SearchInventory />', () => {
         expect(wrapper.find('.clickButton').length).toBe(1);
     })
 
-    it('should render book ', () => {
+    it('should match snapshot', () => {
         const element = component.debug()
         expect(element).toMatchSnapshot();
     });

@@ -30,12 +30,12 @@ describe('<Book />', () => {
     component = shallow(<Book {...props} />);
   });
 
-  it('should render book component', () => {
+  it('should match snapshot', () => {
     const element = component.debug()
     expect(element).toMatchSnapshot();
   });
 
-  it('should validate placeholder in search Book Inventory component', () => {
+  it('should validate cardHeader', () => {
 
     wrapper = shallow(<Book {...props} />);
     expect(wrapper.find('.cardHeader').length).toBe(1);
