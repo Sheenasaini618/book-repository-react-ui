@@ -1,4 +1,3 @@
-import BookCatalogue from "../components/BookCatalogue";
 import GoogleBookCatalogue from "../components/GoogleBookCatalogue";
 import NavbarTwo from "../components/NavbarTwo";
 import { useState } from "react";

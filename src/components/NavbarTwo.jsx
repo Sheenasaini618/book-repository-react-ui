@@ -8,8 +8,6 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
 import ManualAddBook from "./ManualAddBook";
 import { fetchBooksFromGoogle } from "../util/api/bookApi";
 

@@ -30,7 +30,7 @@ export default function AddGoogleBook(props) {
     addGoogleBook(bookData).then((res) => {
       console.log(res);
       handleClose();
-      window.history.go("http://localhost:3000/add");
+      window.location.reload(false);
     });
   };
 

@@ -23,7 +23,7 @@ export default function DeleteBook(props) {
     deleteBook(bookId).then(res => {
       console.log(res)
       handleClose();
-      window.history.go("http://localhost:8080")
+      window.location.reload(false);
     })
   };
 
@@ -41,10 +41,10 @@ export default function DeleteBook(props) {
           {"Are you sure to delete the book?"}
         </DialogTitle>
         <DialogActions>
-          <Button onClick={handleClose}>
+          <Button className ='closeButton' onClick={handleClose}>
             No
           </Button>
-          <Button onClick={handleDelete} autoFocus>
+          <Button className ='deleteButton' onClick={handleDelete} autoFocus>
             Yes
           </Button>
         </DialogActions>

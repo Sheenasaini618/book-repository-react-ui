@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<SearchInventory /> should match snapshot 1`] = `
+"<Fragment>
+  <ForwardRef(Paper) component=\\"form\\" sx={{...}}>
+    <ForwardRef(InputBase) className=\\"placeholder\\" sx={{...}} placeholder=\\"Search Inventory book by title or author\\" onChange={[Function: handleChange]} />
+    <ForwardRef(Divider) sx={{...}} orientation=\\"vertical\\" />
+  </ForwardRef(Paper)>
+  <BookCatalogue details={{...}} />
+</Fragment>"
+`;
+
 exports[`<SearchInventory /> should render book  1`] = `
 "<Fragment>
   <ForwardRef(Paper) component=\\"form\\" sx={{...}}>

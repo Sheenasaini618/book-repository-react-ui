@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<GoogleBook /> should match snapshot 1`] = `
+"<ForwardRef(Card) className=\\"cardWhole\\">
+  <ForwardRef(CardHeader) avatar={{...}} title=\\"Introduction to Probability\\" subheader={{...}} />
+  <ForwardRef(CardMedia) component=\\"img\\" sx={{...}} height=\\"194\\" image=\\"http://books.google.com/books/content?id=2HxYV9lWlEcC&printsec=frontcover&img=1&zoom=5&source=gbs_api\\" alt=\\"Paella dish\\" />
+  <ForwardRef(CardContent)>
+    <ForwardRef(Typography) variant=\\"h6\\" color=\\"text.secondary\\" align=\\"justify\\" style={{...}} />
+    <ForwardRef(Typography) variant=\\"h6\\" color=\\"text.secondary\\" align=\\"justify\\" style={{...}}>
+      Copies Available: 
+      3
+    </ForwardRef(Typography)>
+  </ForwardRef(CardContent)>
+  <ForwardRef(CardActions) disableSpacing={true}>
+    <AddGoogleBook details={{...}} />
+  </ForwardRef(CardActions)>
+</ForwardRef(Card)>"
+`;
+
 exports[`<GoogleBook /> should render book  1`] = `
 "<ForwardRef(Card) className=\\"cardWhole\\">
   <ForwardRef(CardHeader) avatar={{...}} title=\\"Introduction to Probability\\" subheader={{...}} />

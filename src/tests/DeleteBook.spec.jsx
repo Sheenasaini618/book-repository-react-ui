@@ -8,6 +8,13 @@ import DeleteBook from '../components/DeleteBook';
 
 
 configure({ adapter: new Adapter() });
+
+global.fetch = jest.fn().mockImplementation(() =>
+    Promise.resolve({
+        ok: true,
+        status: 200,
+    }),
+);
 describe('<DeleteBook />', () => {
 
     let props, wrapper;
@@ -32,7 +39,7 @@ describe('<DeleteBook />', () => {
 
 describe('<DeleteBook />', () => {
 
-    let props, component;
+    let props, component, wrapper;
 
     beforeEach(() => {
         props = {
@@ -42,8 +49,21 @@ describe('<DeleteBook />', () => {
         component = shallow(<DeleteBook {...props} />);
     });
 
+    if (typeof window === 'undefined') {
+        global.window = {}
+    }
+
     it('should match snapshot', () => {
         const element = component.debug()
         expect(element).toMatchSnapshot();
     });
+
+    it('should validate elements in delete book component', () => {
+
+        wrapper = shallow(<DeleteBook {...props} />);
+        const event = {};
+        expect(wrapper.find('.icon').length).toBe(1);
+        wrapper.find('.closeButton').at(0).simulate('click', event);
+        wrapper.find('.deleteButton').at(0).simulate('click', event);
+    })
 })

@@ -26,8 +26,17 @@ describe('<AddGoogleBook />', () => {
     let props;
     let component;
     let wrapper;
+    if (typeof window === 'undefined') {
+        global.window = {}
+    }
 
     beforeEach(() => {
+
+        Object.defineProperty(window, 'location', {
+            configurable: true,
+            value: { reload: jest.fn() },
+          });
+
         props = {
             details: {
                 "volumeInfo": {
@@ -54,16 +63,12 @@ describe('<AddGoogleBook />', () => {
         expect(component.debug).toMatchSnapshot();
     });
 
-    it('should validate placeholder in search Book Inventory component', () => {
+    it('should validate elements in search Book Inventory component', () => {
 
-        if (typeof window === 'undefined') {
-            global.window = {}
-        }
         wrapper = shallow(<AddGoogleBook {...props} />);
         const event = {};
         expect(wrapper.find('.dialogTitle').length).toBe(1);
         wrapper.find('.closeButton').at(0).simulate('click', event);
-        // wrapper.find('.approveButton').at(0).simulate('click', event);
+        wrapper.find('.approveButton').at(0).simulate('click', event);
     })
-
 })

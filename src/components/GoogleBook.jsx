@@ -16,7 +16,7 @@ export default function GoogleBook(props) {
   
   console.log(book)
   return (
-    <Card className="cardWhole">
+    <Card >
       <CardHeader 
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

@@ -34,10 +34,4 @@ describe('<Book />', () => {
     const element = component.debug()
     expect(element).toMatchSnapshot();
   });
-
-  it('should validate cardHeader', () => {
-
-    wrapper = shallow(<Book {...props} />);
-    expect(wrapper.find('.cardHeader').length).toBe(1);
-  })
 })

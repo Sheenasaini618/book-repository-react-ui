@@ -30,7 +30,7 @@ export default function ManualAddBook() {
     addBook(formData).then((res) => {
       console.log(res);
       handleClose();
-      window.history.go("http://localhost:3000");
+      window.location.reload(false);
     });
   };
 
@@ -114,8 +114,8 @@ export default function ManualAddBook() {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleClose}>Cancel</Button>
-            <Button onClick={handleAddBook}>Add Book</Button>
+            <Button className = 'closeButton' onClick={handleClose}>Cancel</Button>
+            <Button className = 'addBookButton' onClick={handleAddBook}>Add Book</Button>
           </DialogActions>
         </Dialog>
       </div>
