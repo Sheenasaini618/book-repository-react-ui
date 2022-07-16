@@ -1,20 +1,13 @@
 import React from 'react'
-import Book from '../components/Book'
+import Book from '../Book'
 import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme'
 import { configure } from 'enzyme';
-import SearchInventory from '../components/SearchInventory';
-import ManualAddBook from '../components/ManualAddBook';
+import ManualAddBook from '../ManualAddBook';
 
 
 configure({ adapter: new Adapter() });
-
-let component
-
-beforeEach(() => {
-    component = shallow(<ManualAddBook />);
-});
 
 global.fetch = jest.fn().mockImplementation(() =>
     Promise.resolve({
@@ -25,17 +18,27 @@ global.fetch = jest.fn().mockImplementation(() =>
 
 describe('<SearchInventory />', () => {
 
-    let wrapper;
+    let component
 
     if (typeof window === 'undefined') {
         global.window = {}
     }
 
+    beforeEach(() => {
+
+        Object.defineProperty(window, 'location', {
+            configurable: true,
+            value: { reload: jest.fn() },
+        });
+
+        component = shallow(<ManualAddBook />);
+
+    });
+
     it('should call keyPress onChange of fullName with error message', () => {
 
-        wrapper = shallow(<ManualAddBook />);
         const event = {};
-        expect(wrapper.find('.clickButton').length).toBe(1);
+        expect(component.find('.clickButton').length).toBe(1);
     })
 
     it('should match snapshot', () => {
@@ -45,11 +48,10 @@ describe('<SearchInventory />', () => {
 
     it('should validate elements in manual add book component', () => {
 
-        wrapper = shallow(<ManualAddBook />);
         const event = {};
-        expect(wrapper.find('.clickButton').length).toBe(1);
-        wrapper.find('.closeButton').at(0).simulate('click', event);
-        wrapper.find('.addBookButton').at(0).simulate('click', event);
+        expect(component.find('.clickButton').length).toBe(1);
+        component.find('.closeButton').at(0).simulate('click', event);
+        component.find('.addBookButton').at(0).simulate('click', event);
     })
 
 })

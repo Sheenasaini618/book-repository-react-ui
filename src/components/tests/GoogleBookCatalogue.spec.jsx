@@ -3,8 +3,8 @@ import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
 import { mount, shallow, render } from 'enzyme'
 import { configure } from 'enzyme';
-import BookCatalogue from '../components/BookCatalogue';
-import GoogleBookCatalogue from '../components/GoogleBookCatalogue';
+import BookCatalogue from '../BookCatalogue';
+import GoogleBookCatalogue from '../GoogleBookCatalogue'
 
 configure({ adapter: new Adapter() });
 describe('<GoogleBookCatalogue />', () => {

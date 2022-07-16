@@ -1,10 +1,10 @@
 import React from 'react'
-import Book from '../components/Book'
+import Book from '../Book'
 import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme'
 import { configure } from 'enzyme';
-import SearchInventory from '../components/SearchInventory';
+import SearchInventory from '../SearchInventory'
 
 
 configure({ adapter: new Adapter() });

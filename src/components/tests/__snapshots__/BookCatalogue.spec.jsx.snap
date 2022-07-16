@@ -15,9 +15,3 @@ exports[`<BookCatalogue /> should render book  1`] = `
   </ForwardRef(Grid)>
 </ForwardRef(Box)>"
 `;
-
-exports[`<BookCatalogue /> should render book  2`] = `
-"<ForwardRef(Box) sx={{...}} style={{...}}>
-  <ForwardRef(Grid) container={true} spacing={0} />
-</ForwardRef(Box)>"
-`;

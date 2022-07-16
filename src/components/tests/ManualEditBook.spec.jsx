@@ -1,11 +1,9 @@
 import React from 'react'
 import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
-import { mount, shallow, render } from 'enzyme'
+import {  shallow } from 'enzyme'
 import { configure } from 'enzyme';
-import BookCatalogue from '../components/BookCatalogue';
-import GoogleBookCatalogue from '../components/GoogleBookCatalogue';
-import ManualEditBook from '../components/ManualEditBook';
+import ManualEditBook from '../ManualEditBook';
 
 configure({ adapter: new Adapter() });
 describe('<ManualEditBook />', () => {

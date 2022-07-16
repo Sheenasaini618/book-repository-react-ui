@@ -1,41 +1,20 @@
 import React from 'react'
-import Book from '../components/Book'
+import Book from '../Book'
 import '@testing-library/jest-dom'
 import Adapter from 'enzyme-adapter-react-16';
 import { mount, shallow, render } from 'enzyme'
 import { configure } from 'enzyme';
-import GoogleBook from '../components/GoogleBook';
-import AddGoogleBook from '../components/AddGoogleBook';
-
-const mySpecialWindowFunction = () => {
-    return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-};
+import GoogleBook from '../GoogleBook'
 
 
 configure({ adapter: new Adapter() });
+describe('<GoogleBook />', () => {
 
-global.fetch = jest.fn().mockImplementation(() =>
-    Promise.resolve({
-        ok: true,
-        status: 200,
-    }),
-);
-
-describe('<AddGoogleBook />', () => {
-
-    let props;
-    let component;
-    let wrapper;
-    if (typeof window === 'undefined') {
-        global.window = {}
-    }
+    let props, component, wrapper;
 
     beforeEach(() => {
-
-        Object.defineProperty(window, 'location', {
-            configurable: true,
-            value: { reload: jest.fn() },
-          });
+        // charAt: jest.fn()
+        // toUpperCase: jest.fn()
 
         props = {
             details: {
@@ -56,19 +35,11 @@ describe('<AddGoogleBook />', () => {
             }
         }
 
+        component = shallow(<GoogleBook {...props} />);
     })
 
     it('should match snapshot', () => {
-        component = shallow(<AddGoogleBook {...props} />);
-        expect(component.debug).toMatchSnapshot();
+        const element = component.debug()
+        expect(element).toMatchSnapshot();
     });
-
-    it('should validate elements in search Book Inventory component', () => {
-
-        wrapper = shallow(<AddGoogleBook {...props} />);
-        const event = {};
-        expect(wrapper.find('.dialogTitle').length).toBe(1);
-        wrapper.find('.closeButton').at(0).simulate('click', event);
-        wrapper.find('.approveButton').at(0).simulate('click', event);
-    })
 })

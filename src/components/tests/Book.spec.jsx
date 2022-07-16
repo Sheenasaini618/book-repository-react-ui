@@ -1,9 +1,8 @@
-import React from 'react'
-import Book from '../components/Book'
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
+import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { shallow } from 'enzyme'
-import { configure } from 'enzyme';
+import React from 'react';
+import Book from '../Book';
 
 configure({ adapter: new Adapter() });
 describe('<Book />', () => {
