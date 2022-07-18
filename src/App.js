@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import AddBook from "./pages/AddBook";
+import Audit from "./components/Audit"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/addbook" element={<AddBook/>} />
+        <Route exact path="/audit" element={<Audit/>}/>
       </Routes>
     </div>
   </Router>

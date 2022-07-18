@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ManualAddBook from './ManualAddBook';
+import Audit from './Audit';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -57,7 +58,7 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="statis">
+      <AppBar position='static'>
         <Toolbar>
           <IconButton
             size="large"
@@ -80,6 +81,11 @@ export default function Navbar() {
           <Link to="/addbook">
             <Button variant="contained" color="info">
               Add Book using Google APIs
+            </Button>
+          </Link>
+          <Link to="/audit">
+            <Button variant="contained" color="info">
+              Audit
             </Button>
           </Link>
         </Toolbar>

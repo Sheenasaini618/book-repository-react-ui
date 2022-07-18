@@ -148,6 +148,14 @@ const fetchBooksFromGoogle = (search) => {
   return booksData;
 };
 
+const getAuditresults = () => {
+  //GET "http://localhost:8080/api/v1/books/google/list/{search}"
+  const url = "http://localhost:8080/api/v1/books/audit";
+  const auditData = fetch(url);
+  console.log(auditData);
+  return auditData;
+};
+
 //
 
-export { deleteBook, addBook, editBook, fetchBooksFromGoogle, addGoogleBook, retrieveBooksBasisTitle };
+export { deleteBook, addBook, editBook, fetchBooksFromGoogle, addGoogleBook, retrieveBooksBasisTitle, getAuditresults };
